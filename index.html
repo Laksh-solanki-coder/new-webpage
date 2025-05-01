@@ -1,29 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Bootstrap Website</title>
-    <link rel="stylesheet" href="bootstrap-5.3.5-dist/css/bootstrap.min.css">
-    <style>
-        .card-img-top {
-            height: 300px;
-            object-fit: cover;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-lg">
-            <a class="navbar-brand" href="#">MyWebsite</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <nav class="navbar navbar-expand-lg bg-body-secondary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar scroll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="nav me-auto nav-pills" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
@@ -32,244 +27,51 @@
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                            aria-selected="false">About</button>
+                            aria-selected="false">Profile</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                            aria-selected="false">Contact Us</button>
+                            aria-selected="false">Contact</button>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <div id="g_id_onload" data-client_id="420517974057-as6sq2vecc2feankqct6o74opnrgbd18.apps.googleusercontent.com" data-callback="handleGoogleSignIn">
-                        </div>
-                        <div class="g_id_signin" data-type="standard"></div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Link
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                     </li>
                 </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
         </div>
     </nav>
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-            tabindex="0">
-            <div class="bg-primary bg-gradient text-white text-center py-5">
-                <div class="container">
-                    <h1>Welcome to My Responsive Website</h1>
-                    <p class="lead">Built with HTML, Bootstrap, and JavaScript</p>
-                    <a href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#modalId">Learn More</a>
-                </div>
-            </div>
-            <div class="bg-info bg-gradient text-white text-center py-5">
-                <div class="container">
-                    <h1>Welcome to My Responsive Website</h1>
-                    <p class="lead">Built with HTML, Bootstrap, and JavaScript</p>
-                    <a href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#modalId">Learn More</a>
-                </div>
-            </div>
-            <div class="bg-success bg-gradient text-white text-center py-5">
-                <div class="container">
-                    <h1>Welcome to My Responsive Website</h1>
-                    <p class="lead">Built with HTML, Bootstrap, and JavaScript</p>
-                    <a href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#modalId">Learn More</a>
-                </div>
-            </div>
-            <div class="bg-danger bg-gradient text-white text-center py-5">
-                <div class="container">
-                    <h1>Welcome to My Responsive Website</h1>
-                    <p class="lead">Built with HTML, Bootstrap, and JavaScript</p>
-                    <a href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#modalId">Learn More</a>
-                </div>
-            </div>
-            <div class="bg-warning bg-gradient text-white text-center py-5">
-                <div class="container">
-                    <h1>Welcome to My Responsive Website</h1>
-                    <p class="lead">Built with HTML, Bootstrap, and JavaScript</p>
-                    <a href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#modalId">Learn More</a>
-                </div>
-            </div>
-            <div class="bg-secondary bg-gradient text-white text-center py-5">
-                <div class="container">
-                    <h1>Welcome to My Responsive Website</h1>
-                    <p class="lead">Built with HTML, Bootstrap, and JavaScript</p>
-                    <a href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#modalId">Learn More</a>
-                </div>
-            </div>
-        </div>
+            tabindex="0">...</div>
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-            <div class="container my-4">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                    <!-- Card 1 -->
-                    <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <img src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card Title 1</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                                    eiusmod tempor incididunt ut labore.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#" class="btn btn-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <img src="https://shorthand.com/the-craft/raster-images/assets/5kVrMqC0wp/sh-unsplash_5qt09yibrok-4096x2731.jpeg"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card Title 2</h5>
-                                <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                    nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#" class="btn btn-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <img src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card Title 3</h5>
-                                <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    cillum dolore eu fugiat nulla pariatur.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#" class="btn btn-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <img src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card Title 3</h5>
-                                <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    cillum dolore eu fugiat nulla pariatur.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#" class="btn btn-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Add more cards as needed -->
-                </div>
-            </div>
+            ...
         </div>
         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-            <div class="bg-light py-5">
-                <div class="container">
-                    <h2 class="text-center">Contact Us</h2>
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="3" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-            </div>
+            ...
         </div>
         <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
             tabindex="0">...
         </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-3 text-center">
-        <p>&copy; 2025 MyWebsite. All rights reserved.</p>
-    </footer>
-
-    <!-- Modal -->
-    <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitleId">
-                        Modal title
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">Add rows here</div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
-    <script src="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function handleGoogleSignIn(response) {
-            // Decode the JWT token
-            const userData = parseJwt(response.credential);
-            console.log("User data:", userData);
-
-            // Send the token to your backend for verification
-            fetch('/your-backend-endpoint', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ token: response.credential })
-            });
-        }
-
-        // Helper to decode JWT
-        function parseJwt(token) {
-            const base64Url = token.split('.')[1];
-            const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-            return JSON.parse(atob(base64));
-        }
-        const { OAuth2Client } = require('google-auth-library');
-        const client = new OAuth2Client('420517974057-as6sq2vecc2feankqct6o74opnrgbd18.apps.googleusercontent.com');
-
-        async function verifyToken(token) {
-            const ticket = await client.verifyIdToken({
-                idToken: token,
-                audience: '420517974057-as6sq2vecc2feankqct6o74opnrgbd18.apps.googleusercontent.comadd',
-            });
-            const payload = ticket.getPayload();
-            return payload;
-        }
-
-        // Example usage in Express
-        app.post('/your-backend-endpoint', async (req, res) => {
-            const { token } = req.body;
-            try {
-                const userData = await verifyToken(token);
-                res.status(200).json({ success: true, user: userData });
-            } catch (error) {
-                res.status(401).json({ success: false });
-            }
-        });
-    </script>
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </body>
 
 </html>
