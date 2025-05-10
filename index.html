@@ -10,36 +10,37 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-secondary" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-secondary z-3" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand " href="#"><i class="fa-brands fa-bootstrap fa-xl" style="color: #74C0FC;"></i></a>
+            <a class="navbar-brand" href="#"><i class="fa-brands fa-bootstrap fa-xl animate__animated animate__slideInLeft" style="color: #74C0FC;"></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="nav me-auto nav-pills" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item animate__animated animate__zoomIn" role="presentation">
                         <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
                             aria-selected="true">Home</button>
                     </li>
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item animate__animated animate__zoomIn" role="presentation">
                         <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
                             aria-selected="false">Download</button>
                     </li>
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item animate__animated animate__zoomIn" role="presentation">
                         <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
                             aria-selected="false">Contact</button>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown animate__animated animate__zoomIn">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Profile
@@ -68,12 +69,12 @@
             tabindex="0">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                    <div class="card fixed-card">
+                    <div class="card fixed-card animate__animated shadow-pop-tr">
                         <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
                             class="card-img-top fixed-image" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            <p class="card-text animate__jello">This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This content is a little bit longer.</p>
                         </div>
                         <div class="card-footer">
@@ -82,7 +83,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card fixed-card">
+                    <div class="card fixed-card animate__animated shadow-pop-tr">
                         <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
                             class="card-img-top fixed-image" alt="...">
                         <div class="card-body">
@@ -96,7 +97,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card fixed-card">
+                    <div class="card fixed-card animate__animated shadow-pop-tr">
                         <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
                             class="card-img-top fixed-image" alt="...">
                         <div class="card-body">
@@ -138,7 +139,7 @@
 
                 <!-- Checkbox -->
                 <div class="form-check d-flex justify-content-center mb-4">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+                    <input class="form-check-input me-2 " type="checkbox" value="" id="form4Example4" checked />
                     <label class="form-check-label" for="form4Example4">
                         Send me a copy of this message
                     </label>

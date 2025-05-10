@@ -1,8 +1,12 @@
 {
-  "name": "MYNEWREPO",
+  "name": "mynewrepo",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/Laksh-solanki-coder/MYNEWREPO.git",
   "author": "One Mark <lakshsolanki848@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "reshake": "^2.0.0"
+  }
 }
